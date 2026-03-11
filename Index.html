@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гайва-Моторс — Автосервис</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon">GM</div>
+                <div class="logo-text">
+                    <span class="logo-name">ГАЙВА</span>
+                    <span class="logo-name accent">МОТОРС</span>
+                </div>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#services" class="nav-link">Услуги</a>
+                <a href="#about" class="nav-link">О нас</a>
+                <a href="#gallery" class="nav-link">Галерея</a>
+                <a href="#reviews" class="nav-link">Отзывы</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+                <a href="#booking" class="nav-link nav-cta">Записаться</a>
+            </nav>
+            <div class="header-phone">
+                <a href="tel:+79526586646">+7 (952) 658-66-46</a>
+            </div>
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Работаем каждый день
+            </div>
+            <h1 class="hero-title">Ваш автомобиль<br><span class="accent">в надёжных руках</span></h1>
+            <p class="hero-subtitle">Профессиональный автосервис в Перми с рейтингом 4.5★ на Яндекс Картах. Диагностика, ремонт, обслуживание любых марок.</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary btn-lg">Записаться на ремонт</a>
+                <a href="#services" class="btn btn-outline btn-lg">Наши услуги</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="8">0</span>
+                    <span class="hero-stat-label">лет опыта</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="5000">0</span>
+                    <span class="hero-stat-label">довольных клиентов</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="15">0</span>
+                    <span class="hero-stat-label">направлений работ</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Листайте вниз</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages-grid">
+                <div class="advantage-card" data-aos>
+                    <div class="advantage-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Быстрая диагностика</h3>
+                    <p>Компьютерная диагностика за 30 минут с подробным отчётом</p>
+                </div>
+                <div class="advantage-card" data-aos>
+                    <div class="advantage-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Гарантия на работы</h3>
+                    <p>Даём гарантию на все выполненные работы и запчасти</p>
+                </div>
+                <div class="advantage-card" data-aos>
+                    <div class="advantage-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3>Опытные мастера</h3>
+                    <p>Сертифицированные специалисты с многолетним опытом</p>
+                </div>
+                <div class="advantage-card" data-aos>
+                    <div class="advantage-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Удобное расположение</h3>
+                    <p>Находимся на АЗС «Нефтехимпром», ул. Писарева, 2В</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos>
+                <span class="section-tag">Что мы делаем</span>
+                <h2 class="section-title">Наши <span class="accent">услуги</span></h2>
+                <p class="section-desc">Полный спектр услуг по обслуживанию и ремонту вашего автомобиля</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos>
+                    <div class="service-number">01</div>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h3 class="service-title">Техническое обслуживание</h3>
+                    <p class="service-desc">ТО любой сложности, замена масла и всех технических жидкостей</p>
+                    <a href="#booking" class="service-link">Записаться →</a>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-number">02</div>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h3 class="service-title">Компьютерная диагностика</h3>
+                    <p class="service-desc">Диагностика двигателя, АКПП, систем ABS и Airbag</p>
+                    <a href="#booking" class="service-link">Записаться →</a>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-number">03</div>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                    </div>
+                    <h3 class="service-title">Ремонт ходовой части</h3>
+                    <p class="service-desc">Ремонт подвески, тормозной системы, замена ГРМ</p>
+                    <a href="#booking" class="service-link">Записаться →</a>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-number">04</div>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <h3 class="service-title">Шиномонтаж</h3>
+                    <p class="service-desc">Сезонная замена резины, балансировка колёс, развал-схождение</p>
+                    <a href="#booking" class="service-link">Записаться →</a>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-number">05</div>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                    </div>
+                    <h3 class="service-title">Кузовной ремонт</h3>
+                    <p class="service-desc">Сварочные работы, ремонт порогов, глушителей, установка защиты</p>
+                    <a href="#booking" class="service-link">Записаться →</a>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-number">06</div>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <h3 class="service-title">Сигнализации StarLine</h3>
+                    <p class="service-desc">Установка, настройка и обслуживание охранных систем StarLine</p>
+                    <a href="#booking" class="service-link">Записаться →</a>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-number">07</div>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <h3 class="service-title">Электрооборудование</h3>
+                    <p class="service-desc">Диагностика электрики, поиск утечек тока, ремонт света и аудиосистем</p>
+                    <a href="#booking" class="service-link">Записаться →</a>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-number">08</div>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="5" width="22" height="14" rx="2"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <h3 class="service-title">Доп. оборудование</h3>
+                    <p class="service-desc">Видеорегистраторы, парктроники, камеры заднего вида</p>
+                    <a href="#booking" class="service-link">Записаться →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image" data-aos>
+                    <div class="about-placeholder">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                        <span>Фото автосервиса</span>
+                    </div>
+                    <div class="about-image-badge">
+                        <span class="badge-number">4.5</span>
+                        <span class="badge-stars">★★★★★</span>
+                        <span class="badge-text">Яндекс Карты</span>
+                    </div>
+                </div>
+                <div class="about-content" data-aos>
+                    <span class="section-tag">О компании</span>
+                    <h2 class="section-title">Почему выбирают <span class="accent">нас</span></h2>
+                    <p class="about-text">Автосервис «Гайва-Моторс» — это команда профессионалов, которая заботится о вашем автомобиле как о своём. Мы используем современное диагностическое оборудование и качественные запчасти.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-check">✓</div>
+                            <span>Прозрачные цены без скрытых платежей</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-check">✓</div>
+                            <span>Фотоотчёт о проделанной работе</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-check">✓</div>
+                            <span>Оригинальные и качественные аналоги запчастей</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-check">✓</div>
+                            <span>Удобная запись онлайн и через Telegram</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-check">✓</div>
+                            <span>Работаем без выходных</span>
+                        </div>
+                    </div>
+                    <a href="#booking" class="btn btn-primary">Записаться на сервис</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header" data-aos>
+                <span class="section-tag">Фотогалерея</span>
+                <h2 class="section-title">Наши <span class="accent">работы</span></h2>
+                <p class="section-desc">Посмотрите как мы работаем и какие результаты получаем</p>
+            </div>
+            <div class="gallery-grid" data-aos>
+                <div class="gallery-item"><div class="gallery-placeholder">Фото 1<br><small>Ремонт двигателя</small></div></div>
+                <div class="gallery-item gallery-item-tall"><div class="gallery-placeholder">Фото 2<br><small>Диагностика</small></div></div>
+                <div class="gallery-item"><div class="gallery-placeholder">Фото 3<br><small>Шиномонтаж</small></div></div>
+                <div class="gallery-item gallery-item-wide"><div class="gallery-placeholder">Фото 4<br><small>Оборудование</small></div></div>
+                <div class="gallery-item"><div class="gallery-placeholder">Фото 5<br><small>Результат</small></div></div>
+                <div class="gallery-item"><div class="gallery-placeholder">Фото 6<br><small>Мастер</small></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header" data-aos>
+                <span class="section-tag">Отзывы</span>
+                <h2 class="section-title">Что говорят <span class="accent">клиенты</span></h2>
+            </div>
+            <div class="reviews-slider" data-aos>
+                <div class="reviews-track" id="reviewsTrack">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">«Отличный автосервис! Делали полную диагностику и замену масла. Всё быстро, качественно и по адекватной цене. Рекомендую!»</p>
+                        <div class="review-author">
+                            <div class="review-avatar-placeholder">А</div>
+                            <div><span class="review-name">Алексей К.</span><span class="review-date">Яндекс Карты</span></div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">«Записалась через бота в Телеграм — удобно. Сделали развал-схождение за час. Мастера вежливые, всё объяснили.»</p>
+                        <div class="review-author">
+                            <div class="review-avatar-placeholder">М</div>
+                            <div><span class="review-name">Марина С.</span><span class="review-date">Яндекс Карты</span></div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">«Поставили StarLine — работает идеально. Ещё и камеру заднего вида установили. Цены приятные, буду обращаться!»</p>
+                        <div class="review-author">
+                            <div class="review-avatar-placeholder">Д</div>
+                            <div><span class="review-name">Дмитрий В.</span><span class="review-date">Яндекс Карты</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-controls">
+                    <button class="review-btn" id="reviewPrev">◀</button>
+                    <div class="reviews-dots" id="reviewsDots"></div>
+                    <button class="review-btn" id="reviewNext">▶</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="booking-grid">
+                <div class="booking-info" data-aos>
+                    <span class="section-tag">Онлайн-запись</span>
+                    <h2 class="section-title">Запишитесь <span class="accent">прямо сейчас</span></h2>
+                    <p class="booking-desc">Оставьте заявку и мы свяжемся с вами. Также можно записаться через Telegram-бот.</p>
+                    <div class="booking-contacts">
+                        <div class="booking-contact">
+                            <div class="booking-contact-icon">📞</div>
+                            <div><span class="contact-label">Телефон</span><a href="tel:+79526586646" class="contact-value">+7 (952) 658-66-46</a></div>
+                        </div>
+                        <div class="booking-contact">
+                            <div class="booking-contact-icon">📍</div>
+                            <div><span class="contact-label">Адрес</span><span class="contact-value">ул. Писарева, 2В (АЗС «Нефтехимпром»)</span></div>
+                        </div>
+                        <div class="booking-contact">
+                            <div class="booking-contact-icon">🕐</div>
+                            <div><span class="contact-label">График</span><span class="contact-value">Пн-Пт: 09–20 | Сб-Вс: 10–20</span></div>
+                        </div>
+                        <div class="booking-contact">
+                            <div class="booking-contact-icon">💬</div>
+                            <div><span class="contact-label">Telegram</span><a href="https://t.me/GajvaMotorsBot" class="contact-value" target="_blank">@GajvaMotorsBot</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form-wrap" data-aos>
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Ваше имя</label>
+                            <input type="text" id="name" class="form-input" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Телефон</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="service">Услуга</label>
+                            <select id="service" class="form-input" required>
+                                <option value="" disabled selected>Выберите услугу</option>
+                                <option>ТО и замена масла</option>
+                                <option>Компьютерная диагностика</option>
+                                <option>Ремонт ходовой части</option>
+                                <option>Шиномонтаж / развал-схождение</option>
+                                <option>Кузовной ремонт / сварка</option>
+                                <option>Сигнализация StarLine</option>
+                                <option>Электрооборудование</option>
+                                <option>Доп. оборудование</option>
+                                <option>Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="date">Дата</label>
+                                <input type="date" id="date" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="time">Время</label>
+                                <select id="time" class="form-input" required>
+                                    <option value="" disabled selected>Выберите</option>
+                                    <option>09:00</option><option>10:00</option><option>11:00</option>
+                                    <option>12:00</option><option>13:00</option><option>14:00</option>
+                                    <option>15:00</option><option>16:00</option><option>17:00</option>
+                                    <option>18:00</option><option>19:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="comment">Комментарий</label>
+                            <textarea id="comment" class="form-input form-textarea" placeholder="Марка авто, описание проблемы..." rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-full" id="submitBtn">
+                            <span class="btn-text">Отправить заявку</span>
+                            <span class="btn-loader" style="display:none;">Отправка...</span>
+                        </button>
+                        <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+                    </form>
+                    <div class="form-success" id="formSuccess" style="display:none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Заявка отправлена!</h3>
+                        <p>Мы свяжемся с вами в ближайшее время.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="section-header" data-aos>
+                <span class="section-tag">Контакты</span>
+                <h2 class="section-title">Как нас <span class="accent">найти</span></h2>
+            </div>
+            <div class="map-wrap" data-aos>
+                <div class="map-placeholder">
+                    <p>📍 Пермь, ул. Писарева, 2В (АЗС «Нефтехимпром»)</p>
+                    <a href="https://yandex.ru/maps/-/CDw0ZWlj" target="_blank" class="btn btn-primary">Открыть на Яндекс Картах</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">GM</div>
+                        <div class="logo-text">
+                            <span class="logo-name">ГАЙВА</span>
+                            <span class="logo-name accent">МОТОРС</span>
+                        </div>
+                    </a>
+                    <p>Профессиональный автосервис в Перми. Работаем качественно, быстро и по честным ценам.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <a href="#services">Услуги</a>
+                    <a href="#about">О нас</a>
+                    <a href="#gallery">Галерея</a>
+                    <a href="#reviews">Отзывы</a>
+                    <a href="#booking">Записаться</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Услуги</h4>
+                    <a href="#services">Диагностика</a>
+                    <a href="#services">Ремонт ходовой</a>
+                    <a href="#services">Шиномонтаж</a>
+                    <a href="#services">Кузовной ремонт</a>
+                    <a href="#services">Электрика</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <a href="tel:+79526586646">+7 (952) 658-66-46</a>
+                    <span>ул. Писарева, 2В, Пермь</span>
+                    <span>Пн-Пт: 09–20 | Сб-Вс: 10–20</span>
+                    <div class="footer-socials">
+                        <a href="https://vk.com/" target="_blank" class="social-link">VK</a>
+                        <a href="https://t.me/GajvaMotorsBot" target="_blank" class="social-link">TG</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Гайва-Моторс. Все права защищены.</span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://t.me/GajvaMotorsBot" class="floating-tg" target="_blank">TG<span class="floating-tg-pulse"></span></a>
+
+    <script src="main.js"></script>
+</body>
+</html>
